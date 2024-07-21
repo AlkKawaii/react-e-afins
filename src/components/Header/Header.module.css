@@ -1,0 +1,50 @@
+@import url(../../index.css);
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+	z-index: 10;
+}
+
+.title {
+	font-size: 1.5em;
+	font-weight: 900;
+	font-style: italic;
+	text-decoration: underline;
+	transition: all 0.5s;
+	&:hover {
+		transform: rotateZ(-2deg) scale(1.05);
+	}
+}
+
+.nav {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.links {
+	text-decoration: none;
+	color: var(--link-color);
+	font-size: 1.1em;
+	position: relative;
+	&::before {
+		content: '';
+		width: 0;
+		position: absolute;
+		bottom: -2px;
+		height: 1px;
+		background-color: var(--link-color);
+		transition: all 0.5s;
+	}
+	&:hover::before {
+		width: 100%;
+	}
+}
