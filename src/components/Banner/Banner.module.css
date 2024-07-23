@@ -1,9 +1,8 @@
 .banner {
-	margin-top: 68px;
+	margin-top: 64px;
 	width: 100%;
 	height: 347px;
-	background-image: url(/assets/images/banner-mesa.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }

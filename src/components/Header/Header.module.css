@@ -23,6 +23,7 @@
 	transition: all 0.5s;
 	&:hover {
 		transform: rotateZ(-2deg) scale(1.05);
+		filter: drop-shadow(0 0 4px var(--emphasis-color));
 	}
 }
 
