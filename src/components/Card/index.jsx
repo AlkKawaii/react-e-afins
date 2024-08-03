@@ -5,6 +5,7 @@ export default function Card({ randomThing, title }) {
 		<article className={styles.card} title={title}>
 			<a href={randomThing} target="_blank" rel="noreferrer noopener">
 				<img src={randomThing} alt="thumb" />
+				<span>{title}</span>
 			</a>
 		</article>
 	);

@@ -1,16 +1,19 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 export default function Header() {
 	return (
 		<header className={styles.header}>
-			<span className={styles.title}>RandomThings</span>
+			<Link to="/" className={styles.title}>
+				<span>RandomThings</span>
+			</Link>
 			<nav className={styles.nav}>
-				<a className={styles.links} href="#">
+				<Link to="/" className={styles.links}>
 					Home
-				</a>
-				<a className={styles.links} href="#">
+				</Link>
+				<Link to="/random" className={styles.links}>
 					See Random Things
-				</a>
+				</Link>
 			</nav>
 		</header>
 	);

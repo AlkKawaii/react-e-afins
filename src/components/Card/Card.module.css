@@ -2,9 +2,20 @@
 
 .card {
 	display: flex;
+    position: relative;
 }
 
 .card img {
     border-radius: 8px;
     width: 256px;
+}
+
+.card span {
+    position: absolute;
+    color: white;
+    mix-blend-mode: difference;
+    inset: 0;
+    top: 35%;
+    font-weight: 700;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }

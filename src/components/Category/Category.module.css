@@ -1,6 +1,16 @@
 .category section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	justify-content: space-around;
+}
+
+.category h2 {
+	font-size: 2em;
+}
+
+.category {
+	display: flex;
+	flex-flow: column;
+	gap: 0.5em;
 }
