@@ -1,3 +1,27 @@
-.container span {
-    transform: rotateZ(90deg);
+@import url(../../index.css);
+
+.container {
+	padding-top: 64px;
+	width: 100%;
+	min-height: 92.55vh;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+    gap: 1.5em;
+	background: linear-gradient(
+		to bottom left,
+		var(--background-color) 10%,
+		var(--emphasis-color)
+	);
+	color: var(--text-color);
+	& h2 {
+		font-size: 3em;
+	}
+}
+
+.sadFace {
+	display: inline-block;
+	filter: drop-shadow(0 0 2px var(--emphasis-color));
+	transform: rotateZ(90deg) scale(9);
 }
