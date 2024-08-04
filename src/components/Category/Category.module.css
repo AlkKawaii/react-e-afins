@@ -1,3 +1,5 @@
+@import url(../../index.css);
+
 .category section {
 	display: flex;
 	flex-wrap: wrap;
@@ -7,6 +9,7 @@
 
 .category h2 {
 	font-size: 2em;
+	text-shadow: 2px 2px var(--emphasis-color);
 }
 
 .category {

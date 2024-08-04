@@ -10,4 +10,6 @@
 	display: flex;
 	flex-flow: column;
 	gap: 1em;
+	border-top: solid 2px var(--emphasis-color);
+	margin-top: 0.25em;
 }

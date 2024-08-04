@@ -11,7 +11,9 @@ export default function Header() {
 				<Link to="/" className={styles.links}>
 					Home
 				</Link>
-				<Link to="/random" className={styles.links}>
+				<Link
+					to={`/random/${Math.floor(Math.random() * 150) + 1}`}
+					className={styles.links}>
 					See Random Things
 				</Link>
 			</nav>

@@ -1,0 +1,25 @@
+.imgContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.banner {
+	margin-top: 68px;
+	width: 60%;
+	aspect-ratio: 16/9;
+}
+
+.sect {
+	display: flex;
+	text-align: justify;
+	flex-direction: column;
+	gap: 1em;
+
+	& p:nth-child(1)::first-letter {
+		font-size: 2em;
+	}
+	& p::first-letter {
+		margin-left: 1.5em;
+	}
+}
