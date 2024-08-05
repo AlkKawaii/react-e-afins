@@ -16,8 +16,9 @@
 
 .card span {
   position: absolute;
-  color: white;
-  mix-blend-mode: difference;
+  background-color: var(--emphasis-color);
+  color: var(--text-color);
+  height: fit-content;
   inset: 0;
   top: 35%;
   font-weight: 700;
