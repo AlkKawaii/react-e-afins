@@ -1,21 +1,25 @@
 @import url(../../index.css);
 
 .card {
-	display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
+  transition: all 0.25s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .card img {
-    border-radius: 8px;
-    width: 256px;
+  border-radius: 8px;
+  width: 256px;
 }
 
 .card span {
-    position: absolute;
-    color: white;
-    mix-blend-mode: difference;
-    inset: 0;
-    top: 35%;
-    font-weight: 700;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  color: white;
+  mix-blend-mode: difference;
+  inset: 0;
+  top: 35%;
+  font-weight: 700;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }
