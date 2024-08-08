@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 
-export default function Card({ randomThing, element }) {
+export default function Card({ element }) {
 	return (
 		<article className={styles.card} title={element.title}>
 			<Link
 				to={`/random/${element.id}`}
 				target="_blank"
 				rel="noreferrer noopener">
-				<img src={randomThing} alt="thumb" />
+				<img
+					src={`https://picsum.photos/1280/720?random=${Math.random()}&blur`}
+					alt="thumb"
+				/>
 				<span>{element.title}</span>
 			</Link>
 		</article>
