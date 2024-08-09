@@ -15,7 +15,11 @@
 	text-align: justify;
 	flex-direction: column;
 	gap: 1em;
-
+	padding-inline: 4em;
+	
+	& p {
+		hyphens: auto;
+	}
 	& p:nth-child(1)::first-letter {
 		font-size: 2em;
 	}
