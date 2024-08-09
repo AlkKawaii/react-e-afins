@@ -1,26 +1,27 @@
 @import url(../../index.css);
 
 .card {
-  display: flex;
-  position: relative;
-  transition: all 0.25s;
-  &:hover {
-    transform: scale(1.05);
-  }
+	display: flex;
+	position: relative;
+	transition: all 0.25s;
+	width: 256px;
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
 .card img {
-  border-radius: 8px;
-  width: 256px;
+	border-radius: 8px;
+	width: 256px;
 }
 
 .card span {
-  position: absolute;
-  background-color: var(--emphasis-color);
-  color: var(--text-color);
-  height: fit-content;
-  inset: 0;
-  top: 35%;
-  font-weight: 700;
-  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+	position: absolute;
+	background-color: var(--emphasis-color);
+	color: var(--text-color);
+	height: fit-content;
+	inset: 0;
+	top: 35%;
+	font-weight: 700;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }

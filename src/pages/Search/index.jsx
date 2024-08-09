@@ -1,6 +1,8 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
+import SearchArticleList from '../../components/SearchArticleList';
+import db from '../../database/db.json';
 import styles from './Search.module.css';
 
 export default function Search() {
@@ -9,8 +11,7 @@ export default function Search() {
 			<Header />
 			<Container>
 				<section className={styles.search}>
-					<label htmlFor="search">Pesquise aqui!</label>
-					<input type="search" name="search" id="search" placeholder='Digite algo aqui' title='Barra de Pesquisa'/>
+					<SearchArticleList articles={db} />
 				</section>
 			</Container>
 			<Footer />
