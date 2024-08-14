@@ -2,9 +2,9 @@
 
 .category section {
 	display: flex;
-	flex-wrap: wrap;
 	gap: 4px;
 	justify-content: space-around;
+	width: 100%;
 }
 
 .category h2 {
@@ -16,4 +16,5 @@
 	display: flex;
 	flex-flow: column;
 	gap: 0.5em;
+	width: 100%;
 }

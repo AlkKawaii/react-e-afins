@@ -4,7 +4,9 @@ import Category from '../../components/Category';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Carousel from '../../components/Carousel';
 import db from '../../database/db.json';
+import { SwiperSlide } from 'swiper/react';
 
 export default function Home() {
 	const categories = [
@@ -27,9 +29,13 @@ export default function Home() {
 					const items = db.filter((item) => item.category === category);
 					return (
 						<Category key={category} category={category}>
-							{items.map((item) => (
-								<Card key={item.id} element={item} />
-							))}
+							<Carousel>
+								{items.map((item) => (
+									<SwiperSlide key={item.id}>
+										<Card key={item.id} element={item} />
+									</SwiperSlide>
+								))}
+							</Carousel>
 						</Category>
 					);
 				})}

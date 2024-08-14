@@ -1,38 +1,38 @@
 [
 	{
 		"id": 17,
-		"title": "O Futuro das Conchas de Plástico",
-		"category": "Ambiente"
+		"title": "O Futuro das Conchas de Plástico Espaciais",
+		"category": "Astronomia"
 	},
 	{
 		"id": 25,
 		"title": "O Universo das Fitas Adesivas",
-		"category": "Ambiente"
+		"category": "Astronomia"
 	},
 	{
 		"id": 3,
-		"title": "Os Segredos do Cachorro Pigmentado",
-		"category": "Animais"
+		"title": "Os Segredos do Cachorro Plastificado",
+		"category": "Brinquedos"
 	},
 	{
 		"id": 12,
-		"title": "Teorias sobre o Voo dos Pinguins",
-		"category": "Animais"
+		"title": "Teorias sobre o Voo dos Drone Pinguins",
+		"category": "Brinquedos"
 	},
 	{
 		"id": 21,
-		"title": "O Impacto dos Pinguins nas Nuvens",
-		"category": "Animais"
+		"title": "O Impacto dos Bonecos nas Nuvens",
+		"category": "Brinquedos"
 	},
 	{
 		"id": 26,
-		"title": "A Arte da Pintura com Areia Mágica",
-		"category": "Arte"
+		"title": "A Arte da Pintura com Areia Cósmica",
+		"category": "Astronomia"
 	},
 	{
 		"id": 38,
-		"title": "A Arte dos Cubos Mágicos Invertidos",
-		"category": "Arte"
+		"title": "A Supernova dos Cubos Mágicos Invertidos",
+		"category": "Astronomia"
 	},
 	{ "id": 42, "title": "O Guia dos Corações de Papel", "category": "Arte" },
 	{
@@ -532,8 +532,8 @@
 	{ "id": 148, "title": "O Impacto dos Chapéus Digitais", "category": "Moda" },
 	{
 		"id": 13,
-		"title": "A Química dos Balões e das Estrelas",
-		"category": "Química"
+		"title": "Os Chips dos Balões e das Estrelas",
+		"category": "Tecnologia"
 	},
 	{
 		"id": 4,

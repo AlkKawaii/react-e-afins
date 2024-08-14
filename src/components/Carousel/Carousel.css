@@ -1,0 +1,7 @@
+.carousel {
+	width: 95vw;
+}
+
+.carousel :is(.swiper-button-prev, .swiper-button-next) {
+	color: black;
+}
