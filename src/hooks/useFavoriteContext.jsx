@@ -6,13 +6,13 @@ export function useFavoriteContext() {
 
     function addFavorite(newFav) {
         let newFavorites = [...favorite];
-        if (newFavorites.some((element) => element.id === newFav.id)) {
+        if (!newFavorites.some((element) => element.id === newFav.id)) {
             newFavorites.push(newFav);
 
             return setFavorite(newFavorites);
         }
         newFavorites = newFavorites.filter((fav) => fav.id !== newFav.id);
-        return setFavorite(newFavorites);
+        return setFavorite([...newFavorites]);
     }
 
     return [favorite, addFavorite];
