@@ -15,5 +15,5 @@ export function useFavoriteContext() {
         return setFavorite([...newFavorites]);
     }
 
-    return [favorite, addFavorite];
+    return {favorite, addFavorite};
 }

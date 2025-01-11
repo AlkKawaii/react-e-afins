@@ -2,10 +2,13 @@ import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 import favOut from './heartOutline.svg';
 import { useFavoriteContext } from '../../hooks/useFavoriteContext';
-// import favFil from './heartFilled.svg';
+import favFil from './heartFilled.svg';
 
 export default function Card({ element }) {
-    const [favorites, addFavorite] = useFavoriteContext();
+    const {favorite, addFavorite} = useFavoriteContext();
+
+    const isFavorite = favorite.some((fav) => fav.id === element.id);
+
     return (
         <article className={styles.card} title={element.title}>
             <Link to={`/random/${element.id}`} rel='noreferrer noopener'>
@@ -18,7 +21,7 @@ export default function Card({ element }) {
             </Link>
             <figure className={styles.icon}>
                 <img
-                    src={favOut}
+                    src={isFavorite ? favFil : favOut}
                     alt='Icon'
                     onClick={() => addFavorite(element)}
                 />
